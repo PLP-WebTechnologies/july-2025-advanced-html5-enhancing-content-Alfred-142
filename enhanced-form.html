@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>college admission form</title>
+  </head>
+  <body>
+    <form method="post" action="index.html">
+      <fieldset>
+        <legend>student information</legend>
+        <div>
+          <label for="firstname">firstname:</label>
+          <input type="text" />
+        </div>
+        <div>
+          <label for="lastname">lastname:</label>
+          <input type="text" />
+        </div>
+        <label for="DOb">date of birth:</label>
+        <input type="date" />
+        <div>
+          <label for="gender">gender:</label>
+          <select name="gender" id="gender">
+            <option value="" disabled selected>select gender</option>
+            <option>female</option>
+            <option>male</option>
+          </select>
+        </div>
+      </fieldset>
+      <!--contact and address-->
+      <fieldset>
+        <legend>parent / guardian contact</legend>
+        <div>
+          <label for="guardian name ">parent/guardian name</label>
+          <input type="text" name="guardian name" id="guardian name" />
+        </div>
+
+        <div>
+          <label for="relationship">relationship:</label>
+          <select name="relationship" id="relationship">
+            <option value="">select</option>
+            <option>mother</option>
+            <option>father</option>
+            <option>guardian</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="phone number">phone number:</label>
+          <input type="tel" placeholder="0712345678" />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>additional information</legend>
+        <div>
+          <label for="medical information">medical condition:</label>
+          <textarea
+            name="medical"
+            rows="2"
+            placeholder="list any important medical condition"
+          ></textarea>
+        </div>
+
+        <div>
+          <label for="documents"
+            >upload documents(report card,birth cert.)</label
+          >
+          <input type="file" accept="pdf" />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>consent</legend>
+        <label>
+          <input type="checkbox" name="consent" required />i confirm the
+          information provided and consent to application
+        </label>
+      </fieldset>
+      <input type="submit" />
+    </form>
+  </body>
+</html>
